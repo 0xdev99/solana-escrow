@@ -1,0 +1,15 @@
+[package]
+name = "escrow"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-program = "1.9.4"
+thiserror = "1.0.24"
+spl-token = {version = "3.2.0", features = ["no-entrypoint"]}
+arrayref = "0.3.6"
+
+[lib]
+crate-type = ["cdylib", "lib"]
